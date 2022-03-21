@@ -33,6 +33,7 @@
   font-weight: 400;
   height: 1.6rem;
   width: 20.8rem;
+  outline: none;
 }
 
 .header__search--icon {
