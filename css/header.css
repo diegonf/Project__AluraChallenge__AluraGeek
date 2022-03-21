@@ -1,6 +1,5 @@
 .header {
   align-items: center;
-  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
 }
@@ -22,12 +21,10 @@
   align-items: center;
   background: var(--black05);
   border-radius: 2rem;
-  box-sizing: border-box;
   justify-content: space-between;
   padding: 0 1.6rem;
 }
 .header__search--input {
-  box-sizing: border-box;
   background: none;
   border: none;
   display: inline;
