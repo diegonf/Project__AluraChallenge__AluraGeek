@@ -1,16 +1,18 @@
 :root {
-  --azul20: #D4E4FA;
-  --azul100: #2A7AE4;
+  --blue20: #D4E4FA;
+  --blue80: #5595E9;
+  --blue100: #2A7AE4;
+  --black05: #F5F5F5;
+  --black50: #A2A2A2;
   --pagefont: 'Raleway', sans-serif;
-  --preto05: #F5F5F5;
-  --preto50: #A2A2A2;
+  --white: #FFFFFF;
 
   font-size: 62.5%;
 }
 
 .button {
   background: none;
-  border: 0.1rem solid var(--azul100);
+  border: 0.1rem solid var(--blue100);
   border-radius: 0;
   font-family: var(--pagefont);
   font-size: 1.4rem;

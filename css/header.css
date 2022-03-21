@@ -21,7 +21,7 @@
 
 .header__search {
   align-items: center;
-  background: var(--preto05);
+  background: var(--black05);
   border-radius: 2rem;
   box-sizing: border-box;
   justify-content: space-between;
@@ -40,10 +40,10 @@
 }
 
 .header__login {
-  color: var(--azul100);
+  color: var(--blue100);
 }
 .header__login:hover {
-  background: var(--azul20);
+  background: var(--blue20);
   cursor: pointer;
 }
 
