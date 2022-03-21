@@ -10,11 +10,31 @@
   font-size: 62.5%;
 }
 
-.button {
+.whtbutton {
   background: none;
   border: 0.1rem solid var(--blue100);
   border-radius: 0;
+  color: var(--blue100);
   font-family: var(--pagefont);
   font-size: 1.4rem;
   font-weight: 600;
+}
+.whtbutton:hover {
+  background: var(--blue20);
+  cursor: pointer;
+}
+
+.bluebutton {
+  background: var(--blue100);
+  border: 0.1rem solid var(--blue100);
+  border-radius: 0;
+  color: var(--white);
+  font-family: var(--pagefont);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.bluebutton:hover {
+  background: var(--blue80);
+  border: none;
+  cursor: pointer;
 }

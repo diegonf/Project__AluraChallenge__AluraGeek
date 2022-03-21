@@ -23,15 +23,6 @@
   font-family: var(--pagefont);
 }
 
-.banner__button {
-  background: var(--blue100);
-  color: var(--white);
-}
-.banner__button:hover {
-  background: var(--blue80);
-  cursor: pointer;
-}
-
 @media  screen and (min-width: 0) {
   .banner {
     background-image: url('/imgs/bannermobile.png');

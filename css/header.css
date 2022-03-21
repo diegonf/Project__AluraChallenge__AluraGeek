@@ -1,6 +1,5 @@
 .header {
   align-items: center;
-  /* border: 1px solid gray; */
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -37,14 +36,6 @@
   font-weight: 400;
   height: 1.6rem;
   width: 20.8rem;
-}
-
-.header__login {
-  color: var(--blue100);
-}
-.header__login:hover {
-  background: var(--blue20);
-  cursor: pointer;
 }
 
 .header__search--icon {
@@ -115,5 +106,4 @@
     height: 5.1rem;
     width: 18.2rem;
   }
-  
 }
