@@ -4,10 +4,15 @@
   --blue100: #2A7AE4;
   --black05: #F5F5F5;
   --black50: #A2A2A2;
+  --black100: #464646;
   --pagefont: 'Raleway', sans-serif;
   --white: #FFFFFF;
 
   font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
 }
 
 .whtbutton {
