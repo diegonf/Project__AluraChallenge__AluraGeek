@@ -34,7 +34,7 @@
 
 .gallery__seeall--img {
   background: no-repeat center / cover;
-  background-image: url(/imgs/arrow.svg);
+  background-image: url(./imgs/arrow.svg);
 }
 
 .gallery__products {
