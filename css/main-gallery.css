@@ -1,4 +1,5 @@
 .galleries {
+  background: var(--black05);
   display: flex;
   flex-direction: column;
 }
