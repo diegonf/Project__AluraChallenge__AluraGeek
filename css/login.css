@@ -1,0 +1,107 @@
+.login {
+  background: var(--black05);
+}
+
+.login__title {
+  color: var(--black100);
+  font-family: var(--pagefont);
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+  text-align: center;
+}
+
+.login__form--block {
+  background: var(--white);
+  border-radius: 0.4rem;
+  box-shadow: 0 0.1rem var(--black30);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.login__form--label {
+  color: var(--black50);
+  display: inline-block;
+  width: 100%;
+  font-family: var(--pagefont);
+  font-weight: 400;
+}
+
+.login__form--input {
+  border: none;
+  background: none;
+  color: var(--black50);
+  font-family: var(--pagefont);
+  font-size: 1.6rem;
+  font-weight: 400;
+  height: 3rem;
+  outline: none;
+  width: 100%;
+}
+
+.login__form--button {
+  display: block;
+  margin: 0 auto;
+}
+
+@media  screen and (min-width: 0) {
+  .login {
+    padding: 9.6rem 4.5rem 7.6rem 4.5rem; 
+  }
+  .login__title {
+    font-size: 1.6rem;
+  }
+  .login__form--label {
+    font-size: 1.4rem;
+  }
+  .login__form--input {
+    height: 2rem;
+  }
+  .login__form--button {
+    height: 4rem;
+    width: 10.9rem;
+  }
+}
+
+@media  screen and (min-width: 768px) {
+  .login {
+    padding: 4.5rem 24.7rem 6.1rem 24.7rem; 
+  }
+  .login__title {
+    font-size: 1.6rem;
+  }
+  .login__form--label {
+    font-size: 1.4rem;
+  }
+  .login__form--input {
+    height: 2rem;
+  }
+  .login__form--button {
+    height: 4rem;
+    width: 10.9rem;
+  }
+}
+
+@media  screen and (min-width: 1200px) {
+  .login {
+    padding: 9.1rem 50.9rem; 
+  }
+  .login__title {
+    font-size: 1.8rem;
+  }
+  .login__form--block {
+    height: 6.3rem;
+  }
+  .login__form--label {
+    font-size: 1.6rem;
+  }
+  .login__form--input {
+    height: 3rem;
+  }
+  .login__form--button {
+    height: 6.3rem;
+    width: 100%;
+  }
+}
