@@ -102,6 +102,18 @@
   }
 }
 
+.footer__developer {
+  height: 10.2rem;
+  padding: 3.2rem;
+}
+
+.footer__developer--text {
+  font-family: var(--pagefont);
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+}
+
 @media  screen and (min-width: 768px) {
   .footer__aboutus {
     align-items: flex-start;
