@@ -185,7 +185,22 @@
     display: flex;
   }
   .add__form--imgdrop {
+    background: no-repeat center / cover;
+    background-color: var(--white);
     width: 36%;
+  }
+  .add__form--imgdrop.highlight {
+    border: 0.3rem dashed red;
+    transition: 100ms;
+  }
+  .add__form--imgdrop.imgAdded {
+    border-style: solid;
+  }
+  .add__form--imgdrop.imgAdded div {
+    display: none;
+  }
+  .add__form--imgdrop.imgAdded p {
+    display: none;
   }
   .add__form--imgbutton--button {
     height: 5.1rem;
@@ -219,7 +234,22 @@
     display: flex;
   }
   .add__form--imgdrop {
+    background: no-repeat center / cover;
+    background-color: var(--white);
     width: 50%;
+  }
+  .add__form--imgdrop.highlight {
+    border: 0.3rem dashed red;
+    transition: 100ms;
+  }
+  .add__form--imgdrop.imgAdded {
+    border-style: solid;
+  }
+  .add__form--imgdrop.imgAdded div {
+    display: none;
+  }
+  .add__form--imgdrop.imgAdded p {
+    display: none;
   }
   .add__form--imgbutton--button {
     height: 5.1rem;
