@@ -1,0 +1,13 @@
+{
+  "products": 
+  [
+    {
+      "name": "Diego",
+      "idade": "31"
+    },
+    {
+      "name": "Nathalia",
+      "idade": "29"
+    }
+  ]
+}
