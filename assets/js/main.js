@@ -1,3 +1,4 @@
+//função para renderizar header e footer
 (function () {
   const header = document.querySelector('[data-header]');
   const url = '../assets/header.html';
@@ -14,3 +15,4 @@
         footer.innerHTML = data;
   });
 }());
+
