@@ -23,7 +23,7 @@
 
 @media  screen and (min-width: 0) {
   .banner {
-    background-image: url('../imgs/bannermobile.png');
+    background-image: url('../assets/imgs/bannermobile.png');
     height: 19.2rem;
     padding: 1.6rem;
   }
@@ -46,7 +46,7 @@
 
 @media  screen and (min-width: 768px) {
   .banner {
-    background-image: url('../imgs/bannermobile.png');
+    background-image: url('../assets/imgs/bannermobile.png');
     height: 35.2rem;
     padding: 3.2rem;
   }
@@ -69,7 +69,7 @@
 
 @media  screen and (min-width: 1200px) {
   .banner {
-    background-image: url('../imgs/bannerdesktop.png');
+    background-image: url('../assets/imgs/bannerdesktop.png');
     height: 35.2rem;
     padding: 3.2rem 15.2rem;
   }

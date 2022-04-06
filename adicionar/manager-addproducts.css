@@ -34,7 +34,7 @@
   height: 3.2rem;
   width: 3.2rem;
   background: no-repeat center / cover;
-  background-image: url('../imgs/dropimage.svg');
+  background-image: url('../assets/imgs/dropimage.svg');
 }
 
 .add__form--imgdrop--text {
@@ -85,7 +85,7 @@
 
 .add__form--imgmobile--plus {
   background: no-repeat center / cover;
-  background-image: url('../imgs/plus.svg');
+  background-image: url('../assets/imgs/plus.svg');
   height: 3.2rem;
   margin: 0 auto;
   width: 3.2rem;
