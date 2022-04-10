@@ -61,8 +61,8 @@
 
 @media  screen and (min-width: 0) {
   .allprod {
-    padding: 3.2rem;
-    padding-bottom: 1.6rem;
+    padding: 1.6rem;
+    padding-bottom: 0;
   }
   .allprod__header {
     flex-direction: column;
@@ -92,7 +92,7 @@
 @media  screen and (min-width: 768px) {
   .allprod {
     padding: 3.2rem;
-    padding-bottom: 1.6rem;
+    padding-bottom: 0;
   }
   .allprod__header {
     align-items: center;

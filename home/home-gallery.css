@@ -46,10 +46,7 @@
 
 @media  screen and (min-width: 0) {
   .galleries {
-    padding: 0 1.6rem;
-  }
-  .gallery {
-    margin-top: 1.6rem;
+    padding: 1.6rem 1.6rem 0 1.6rem;
   }
   .gallery__header {
     margin-bottom: 1.6rem;
@@ -65,10 +62,7 @@
 
 @media  screen and (min-width: 768px) {
   .galleries {
-    padding: 0 3.2rem;
-  }
-  .gallery {
-    margin-top: 3.2rem;
+    padding: 3.2rem 3.2rem 0 3.2rem;
   }
   .gallery__header {
     margin-bottom: 1.6rem;
@@ -84,10 +78,7 @@
 
 @media  screen and (min-width: 1200px) {
   .galleries {
-    padding: 0 15.2rem 6.4rem 15.2rem;
-  }
-  .gallery {
-    margin-top: 6.4rem;
+    padding: 6.4rem 15.2rem 0 15.2rem;
   }
   .gallery__header {
     margin-bottom: 1.6rem;

@@ -69,10 +69,10 @@
     font-size: 1.4rem;
     font-weight: 400;
     margin: 0 1.6rem;
-    margin-bottom: 1.6rem;
+    padding-bottom: 1.6rem;
   }
   .similarproducts {
-    padding: 1.6rem 1.6rem 0 1.6rem;
+    padding: 0 1.6rem;
   }
 }
 
@@ -101,9 +101,10 @@
     font-size: 1.4rem;
     font-weight: 400;
     margin: 0;
+    padding-bottom: 0;
   }
   .similarproducts{
-    padding: 3.2rem;
+    padding: 0 3.2rem;
   }
 }
 
@@ -139,6 +140,6 @@
   }
 
   .similarproducts {
-    padding: 0 15.2rem 6.4rem 15.2rem;
+    padding: 0 15.2rem;
   }
 }
