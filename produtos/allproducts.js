@@ -1,8 +1,7 @@
 import { apiGetData } from "../assets/js/getDataAPI.js";
 
-const preLoadAllProducts = () => {
+const loadAllProducts = (productList) => {
   //print all products
-  const productList = apiGetData();
   const allProds = document.querySelector('[data-allproducts]');
 
   productList.forEach(prod => {
@@ -10,4 +9,4 @@ const preLoadAllProducts = () => {
   });
 };
 
-preLoadAllProducts();
+apiGetData(loadAllProducts);
