@@ -10,36 +10,40 @@ export class Product {
   }
 
   _smallProductHtml() {
-    this._smallProduct = document.createElement('div');
-    this._smallProduct.classList.add('gallery__product');
+    const small = this._buildDiv('gallery__product');
+    small.appendChild(this._buildImg('gallery__product--img'));
+    small.appendChild(this._buildName('p', 'gallery__product--name'));
+    small.appendChild(this._buildPrice('gallery__product--price'));
 
     const prodSeeProd = document.createElement('a');
     prodSeeProd.classList.add('gallery__product--seeproduct');
     prodSeeProd.href="#";
     prodSeeProd.innerHTML = 'Ver produto';
 
-    this._smallProduct.appendChild(this._buildImg('gallery__product--img'));
-    this._smallProduct.appendChild(this._buildName('p', 'gallery__product--name'));
-    this._smallProduct.appendChild(this._buildPrice('gallery__product--price'));
-    this._smallProduct.appendChild(prodSeeProd);
+    small.appendChild(prodSeeProd);
 
-    return this._smallProduct;
+    return small;
   }
 
   _bigProductHtml() {
-    this._bigProduct = document.createElement('section');
-    this._bigProduct.classList.add('product');
+    this._bigProduct = this._buildDiv('product');
+    this._bigProduct.appendChild(this._buildImg('product__img'));
+    this._bigProduct.appendChild(this._buildName('h1', 'product__title'));
+    this._bigProduct.appendChild(this._buildPrice('product__price'));
 
     const prodDescription = document.createElement('p');
     prodDescription.classList.add('product__description');
     prodDescription.innerHTML = this._description;
 
-    this._bigProduct.appendChild(this._buildImg('product--img'));
-    this._bigProduct.appendChild(this._buildName('h1', 'product__title'));
-    this._bigProduct.appendChild(this._buildPrice('product__price'));
     this._bigProduct.appendChild(prodDescription);
 
     return this._bigProduct;
+  }
+
+  _buildDiv(divClass){
+    const prodDiv = document.createElement('div');
+    prodDiv.classList.add(divClass);
+    return prodDiv;
   }
 
   _buildImg(imgClass) {
@@ -73,9 +77,9 @@ export class Product {
 // </div>
   
 //big product
-// <section class="product">
+// <div class="product">
 //   <img src="../assets/imgs/product.png" alt="Imagem do produto" class="product__img">
 //   <h1 class="product__title">Produto XYZ</h1>
 //   <p class="product__price">R$ 60,00</p>
 //   <p class="product__description">Voluptas voluptatum quibusdam similique.</p> 
-// </section>
+// </div>

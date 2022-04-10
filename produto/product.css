@@ -4,7 +4,7 @@
 }
 
 .product__img {
-  object-fit: cover;
+  object-fit: fit;
 }
 
 .product__title {

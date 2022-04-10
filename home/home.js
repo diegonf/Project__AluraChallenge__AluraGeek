@@ -6,8 +6,7 @@ const others = document.querySelector('[data-others]');
 const productList = apiGetData();
 
 let i = 0, j = 0, k = 0;
-productList.forEach(prod => {
-
+productList.forEach((prod, id) => {
   if (prod.category == 'starwars') {
     if ( i >= 4){
       prod.smallProduct.classList.add('gallery__product--desktop');
@@ -28,5 +27,11 @@ productList.forEach(prod => {
     }
     others.appendChild(prod.smallProduct);
     k++
-  }  
+  }
+
+  prod.smallProduct.lastChild.addEventListener('click', (event) => {
+    event.preventDefault();
+    localStorage.setItem('activeproduct', id);
+    window.location.replace("../produto");
+  });
 });
