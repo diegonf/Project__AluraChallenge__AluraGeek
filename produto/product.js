@@ -21,15 +21,10 @@ const loadProductSelected = (productList) => {
       if ( i >= 4){
         prod.smallProduct.classList.add('gallery__product--desktop');
       }
-      similarProds.appendChild(prod.smallProduct);
+      prod.addElement(similarProds, id);
       i++
     }
 
-    prod.smallProduct.lastChild.addEventListener('click', (event) => {
-      event.preventDefault();
-      localStorage.setItem('activeproduct', id);
-      window.location.replace("../produto");
-    });
   });
 }
 

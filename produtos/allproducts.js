@@ -4,8 +4,8 @@ const loadAllProducts = (productList) => {
   //print all products
   const allProds = document.querySelector('[data-allproducts]');
 
-  productList.forEach(prod => {
-      allProds.appendChild(prod.smallProduct);
+  productList.forEach((prod, id) => {
+    prod.addElement(allProds, id);
   });
 };
 

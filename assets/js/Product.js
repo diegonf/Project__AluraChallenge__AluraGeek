@@ -9,6 +9,16 @@ export class Product {
     this.bigProduct = this._bigProductHtml();
   }
 
+  addElement(htmlElement, id){
+    htmlElement.appendChild(this.smallProduct);
+
+    this.smallProduct.lastChild.addEventListener('click', (event) => {
+      event.preventDefault();
+      localStorage.setItem('activeproduct', id);
+      window.location.href = "../produto";
+    });
+  }
+
   _smallProductHtml() {
     const small = this._buildDiv('gallery__product');
     small.appendChild(this._buildImg('gallery__product--img'));

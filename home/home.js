@@ -10,7 +10,6 @@ seeAll.forEach(category => {
 });
 
 
-
 const starwars = document.querySelector('[data-starwars]');
 const devices = document.querySelector('[data-devices]');
 const others = document.querySelector('[data-others]');
@@ -22,29 +21,23 @@ const loadProductsHome = (productList) => {
       if ( i >= 4){
         prod.smallProduct.classList.add('gallery__product--desktop');
       }
-      starwars.appendChild(prod.smallProduct);
+      prod.addElement(starwars, id);
       i++
     }
     if (prod.category === 'Consoles') {
       if ( j >= 4){
         prod.smallProduct.classList.add('gallery__product--desktop');
       }
-      devices.appendChild(prod.smallProduct);
+      prod.addElement(devices, id);
       j++
     }
     if (prod.category === 'Diversos') {
       if ( k >= 4){
         prod.smallProduct.classList.add('gallery__product--desktop');
       }
-      others.appendChild(prod.smallProduct);
+      prod.addElement(others, id);
       k++
     }
-
-    prod.smallProduct.lastChild.addEventListener('click', (event) => {
-      event.preventDefault();
-      localStorage.setItem('activeproduct', id);
-      window.location.href = "../produto";
-    });
   });
 }
 

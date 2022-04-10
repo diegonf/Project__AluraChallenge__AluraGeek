@@ -10,9 +10,9 @@ const preLoadProdsCategory = () => {
       localStorage.setItem('activecategory', activeCategory);
     }
 
-    productList.forEach(prod => {
+    productList.forEach((prod, id) => {
         if (prod.category === activeCategory){
-          prodsCategory.appendChild(prod.smallProduct);
+          prod.addElement(prodsCategory, id);
           categoryTitle.innerHTML = activeCategory;
         }
       
