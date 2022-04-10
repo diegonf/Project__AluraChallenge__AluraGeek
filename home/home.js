@@ -32,7 +32,7 @@ const loadProductsHome = (productList) => {
     prod.smallProduct.lastChild.addEventListener('click', (event) => {
       event.preventDefault();
       localStorage.setItem('activeproduct', id);
-      window.location.replace("../produto");
+      window.location.href = "../produto";
     });
   });
 }
