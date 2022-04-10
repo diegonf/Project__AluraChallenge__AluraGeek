@@ -1,5 +1,16 @@
 import { apiGetData } from "../assets/js/getDataAPI.js";
 
+const seeAll = document.querySelectorAll('[data-seeall]');
+seeAll.forEach(category => {
+  category.addEventListener('click', (event) => {
+    event.preventDefault();
+    localStorage.setItem('activecategory', category.dataset.seeall);
+    window.location.href = "../produtoscategoria";
+  });
+});
+
+
+
 const starwars = document.querySelector('[data-starwars]');
 const devices = document.querySelector('[data-devices]');
 const others = document.querySelector('[data-others]');
