@@ -5,7 +5,7 @@
       "name": "Caneca Trooper",
       "price": 39.90,
       "description": "Caneca incrível de Star Wars. A caneca é feita de porcelana, representando incrívelmente o capacete do StormTrooper. Diretamente de Star Wars para o seu café da manhã ficar muito mais especial.",
-      "category": "starwars",
+      "category": "Star Wars",
       "image": "starwars-img1.png"
     },
     {
@@ -13,7 +13,7 @@
       "name": "Mini head Darth Vader e Starfighter Pilot",
       "price": 99.90,
       "description": "Conjunto dois em um. Nesse incrível produto você leva lindas miniaturas de Darth Vader e dos pilotos TIE Fighter. As miniaturas vêm em material PVC e são perfeitas para efeitar a sua estante.",
-      "category": "starwars",
+      "category": "Star Wars",
       "image": "starwars-img2.png"
     },
     {
@@ -21,7 +21,7 @@
       "name": "Yoda tamanho real",
       "price": 1500.00,
       "description": "Boneco Yoda em tamanho real. Ideal para eventos e exposições. Feito com os melhores materiais disponíveis, esse com certeza é o melhor boneco Yoda que você encontrará no mercado.",
-      "category": "starwars", 
+      "category": "Star Wars", 
       "image": "starwars-img3.png"
     },
     {
@@ -29,7 +29,7 @@
       "name": "Boneco Stormtrooper",
       "price": 99.90,
       "description": "Boneco Stormtrooper para aumentar sua coleção Star Wars. Esse boneco vem com incríveis detalhes, tão perfeitos quanto os da série. O material é em PVC e ele é perfeito para efeitar a sua estante.",
-      "category": "starwars", 
+      "category": "Star Wars", 
       "image": "starwars-img4.png"
     },
     {
@@ -37,7 +37,7 @@
       "name": "Baby Yoda",
       "price": 149.99,
       "description": "Boneco Baby Yoda em tamanho real (de um baby, é claro). O Baby Yoda vem direto das telinhas com muita qualidade e cheio de detalhes para você e sua família aproveitarem ao máximo.",
-      "category": "starwars", 
+      "category": "Star Wars", 
       "image": "starwars-img5.png"
     },
     {
@@ -45,7 +45,7 @@
       "name": "Fantasia Darth Vader",
       "price": 250.00,
       "description": "Fantasia em tamanho real direto de Stars Wars. Que tal ser o próximo Darth Vader daquela festa a fantasia que você vai esse ano? Essa fantasia vem em diversos tamanhos e em excelente qualidade.",
-      "category": "starwars", 
+      "category": "Star Wars", 
       "image": "starwars-img6.png" 
     },
     {
@@ -53,7 +53,7 @@
       "name": "Controle X-Box 360",
       "price": 99.99,
       "description": "Controle X-Box 350 novo, na cor branca, com 1 ano de garantia.",
-      "category": "consoles" ,
+      "category": "Consoles" ,
       "image": "devices-img1.png"
     },
     {
@@ -61,7 +61,7 @@
       "name": "Console Irado",
       "price": 2500.00,
       "description": "Console irado, posição vertical, na cor azul brilhante. Roda todos os jogos disponíveis.",
-      "category": "consoles" ,
+      "category": "Consoles" ,
       "image": "devices-img2.png"
     },
     {
@@ -69,7 +69,7 @@
       "name": "Nintendo Retro",
       "price": 500.00,
       "description": "Nintendo retro, versão que copia 100% o design da versão original e traz junto todos os jogos do Nintendo.",
-      "category": "consoles" ,
+      "category": "Consoles" ,
       "image": "devices-img3.png"
     },
     {
@@ -77,7 +77,7 @@
       "name": "Controle Nintendo Wii",
       "price": 220.00,
       "description": "Par de controles para console Nintendo Wii. Escolha dentre as variadas possíveis cores.",
-      "category": "consoles" ,
+      "category": "Consoles" ,
       "image": "devices-img4.png"
     },
     {
@@ -85,7 +85,7 @@
       "name": "Playstation 5",
       "price": 2000.00,
       "description": "Console Playstation 4, novo, com 1 ano de garantia.",
-      "category": "consoles" ,
+      "category": "Consoles" ,
       "image": "devices-img5.png"
     },
     {
@@ -93,7 +93,7 @@
       "name": "Game Boy Color",
       "price": 500.00,
       "description": "Game Boy Color, o melhor console de todos os tempos ofertado por uma pechincha. Aproveite essa promossão e leve três cartuchos surpresas junto com o console.",
-      "category": "consoles",
+      "category": "Consoles",
       "image": "devices-img6.png"
     },
     {
@@ -101,7 +101,7 @@
       "name": "Camisa Atari",
       "price": 50.00,
       "description": "Camisa personalisada console Atari",
-      "category": "diversos" ,
+      "category": "Diversos" ,
       "image": "otherproducts-img1.png"
     },
     {
@@ -109,7 +109,7 @@
       "name": "Camisa SNES",
       "price": 50.00,
       "description": "Camisa personalizada console SNES",
-      "category": "diversos" ,
+      "category": "Diversos" ,
       "image": "otherproducts-img2.png"
     },
     {
@@ -117,7 +117,7 @@
       "name": "Miniatura Sonic",
       "price": 100.00,
       "description": "Miniatura do personagem Sonic.",
-      "category": "diversos" ,
+      "category": "Diversos" ,
       "image": "otherproducts-img3.png"
     },
     {
@@ -125,7 +125,7 @@
       "name": "Radio Relogio Retro",
       "price": 100.00,
       "description": "Super radio relogio retro.",
-      "category": "diversos" ,
+      "category": "Diversos" ,
       "image": "otherproducts-img4.png"
     },
     {
@@ -133,7 +133,7 @@
       "name": "Oculos Console",
       "price": 50000.00,
       "description": "Oculos console. Garanta esse oculos do futuro e jogue qualquer jogo apenas colocando ele no rosto e pensando em que jogo você quer jogar.",
-      "category": "diversos" ,
+      "category": "Diversos" ,
       "image": "otherproducts-img5.png"
     },
     {
@@ -141,7 +141,7 @@
       "name": "Boneco Gigante do Pickachu",
       "price": 350.00,
       "description": "Boneco Gigante de pelucia do Pickachu.",
-      "category": "diversos" ,
+      "category": "Diversos" ,
       "image": "otherproducts-img6.png"
     }
   ]
