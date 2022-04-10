@@ -1,6 +1,6 @@
 import { apiGetData } from "../assets/js/getDataAPI.js";
 
-const preLoadProduct = () => {
+const loadProductSelected = (productList) => {
   //print main product
   const prodSection = document.querySelector('[data-prodsection]');
   let prodID = JSON.parse(localStorage.getItem('activeproduct'));
@@ -8,7 +8,6 @@ const preLoadProduct = () => {
     prodID = 0;
     localStorage.setItem('activeproduct', prodID);
   }
-  const productList = apiGetData();
   const activeProd = productList[prodID].bigProduct
   prodSection.appendChild(activeProd);
 
@@ -34,4 +33,4 @@ const preLoadProduct = () => {
   });
 }
 
-preLoadProduct();
+apiGetData(loadProductSelected);
