@@ -25,11 +25,13 @@
   flex-wrap: wrap;
 }
 
-.allprod__product--prodcode {
+.gallery__product--prodID {
   color: var(--black100);
+  display: block;
   font-family: var(--pagefont);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
+  margin-bottom: 0.8rem;
 }
 
 @media  screen and (min-width: 0) {

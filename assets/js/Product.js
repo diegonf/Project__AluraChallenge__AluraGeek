@@ -1,9 +1,10 @@
 export class Product {
-  constructor (photo, name, price, description, category){
+  constructor (photo, name, price, description, category, id){
     this._photo = photo;
     this._name = name;
     this._price = price;
     this._description = description;
+    this._id = id;
     this.category = category;
     this.smallProduct = this._smallProductHtml();
     this.bigProduct = this._bigProductHtml();
@@ -24,6 +25,13 @@ export class Product {
     small.appendChild(this._buildImg('gallery__product--img'));
     small.appendChild(this._buildName('p', 'gallery__product--name'));
     small.appendChild(this._buildPrice('gallery__product--price'));
+
+    const prodID = document.createElement('p');
+    const id = ("0000" + this._id).slice(-4)
+    prodID.classList.add('gallery__product--prodID');
+    prodID.classList.add('hide');
+    prodID.innerHTML = '#' + id;
+    small.appendChild(prodID);
 
     const prodSeeProd = document.createElement('a');
     prodSeeProd.classList.add('gallery__product--seeproduct');

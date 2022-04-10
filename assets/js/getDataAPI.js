@@ -31,7 +31,7 @@ const productList = (prodList, _callBack) => {
   let i = 0;
   let prodListObj = [];
   prodList.forEach(prod => {
-    prodListObj[i] = new Product(prod.image, prod.name, prod.price, prod.description, prod.category);
+    prodListObj[i] = new Product(prod.image, prod.name, prod.price, prod.description, prod.category, prod.id);
     i++;
   });
 
