@@ -47,39 +47,6 @@
   align-items: stretch;
 }
 
-.similarproduct__product {
-  display: flex;
-  flex-direction: column;
-}
-
-.similarproduct__product--img {
-  height: 100%;
-  margin-bottom: 0.8rem;
-  width: 100%;
-}
-
-.similarproduct__product--description {
-  color: var(--black100);
-  font-family: var(--pagefont);
-  font-size: 1.4rem;
-  font-weight: 500;
-  margin-bottom: 0.8rem;
-}
-
-.similarproduct__product--price {
-  color: var(--black100);
-  font-family: var(--pagefont);
-  font-size: 1.6rem;
-  font-weight: 700;
-  margin-bottom: 0.8rem;
-}
-
-.similarproduct__product--seeproduct {
-  color: var(--blue100);
-  font-family: var(--pagefont);
-  font-weight: 700;
-}
-
 @media  screen and (min-width: 0) {
   .product {
     padding: 0;
@@ -104,24 +71,9 @@
     margin: 0 1.6rem;
     margin-bottom: 1.6rem;
   }
-
   .similarproducts {
     padding: 1.6rem 1.6rem 0 1.6rem;
   }
-  .similarproduct__product {
-    margin-bottom: 1.6rem;
-    width: calc(50% - 0.8rem);
-  }
-  .similarproduct__product:nth-child(2n+1){
-    margin-right: 1.6rem;
-  }
-  .similarproduct__product--desktop {
-    display: none;
-  }
-  .similarproduct__product--seeproduct {
-    font-size: 1.4rem;
-  }
-  
 }
 
 @media  screen and (min-width: 768px) {
@@ -150,27 +102,8 @@
     font-weight: 400;
     margin: 0;
   }
-
-
   .similarproducts{
     padding: 3.2rem;
-  }
-  .similarproduct__product {
-    margin-bottom: 0;
-    margin-right: 1.6rem;
-    width: calc( (100% - 4.8rem)/4 );
-  }
-  .similarproduct__product:nth-child(2n+1){
-    margin-right: 1.6rem;
-  }
-  .similarproduct__product:nth-child(4n){
-    margin-right: 0;
-  }
-  .similarproduct__product--desktop {
-    display: none;
-  }
-  .similarproduct__product--seeproduct {
-    font-size: 1.6rem;
   }
 }
 
@@ -205,28 +138,7 @@
     width: 65%;
   }
 
-
   .similarproducts {
     padding: 0 15.2rem 6.4rem 15.2rem;
-  }
-  .similarproduct__product {
-    margin-bottom: 0;
-    margin-right: 1.6rem;
-    width: calc( (100% - 8rem) / 6 );
-  }
-  .similarproduct__product:nth-child(2n+1){
-    margin-right: 1.6rem;
-  }
-  .similarproduct__product:nth-child(4n){
-    margin-right: 1.6rem;
-  }
-  .similarproduct__product:nth-child(6n){
-    margin-right: 0;
-  }
-  .similarproduct__product--desktop {
-    display: flex;
-  }
-  .similarproduct__product--seeproduct {
-    font-size: 1.6rem;
   }
 }
