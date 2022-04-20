@@ -5,7 +5,7 @@ export const apiGetData = (_callBack) => {
 
   if (prodListLS[0] == null || prodListLS[0] == ''){
     let prodList, response;
-    const url = '../assets/json/db.json';
+    const url = '/assets/json/db.json';
 
     const xhr = new XMLHttpRequest();
     xhr.open('GET', url);
