@@ -10,6 +10,19 @@
   text-align: center;
 }
 
+.login__span{
+  color: red;
+  display: inline-block;
+  font-family: var(--pagefont);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  margin-left: 0.1rem;
+}
+
+.login__span.hidden {
+  display: none;
+}
+
 .login__form--block {
   background: var(--white);
   border-radius: 0.4rem;

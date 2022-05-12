@@ -19,16 +19,17 @@
   <main>
     <section class="login">
       <h1 class="login__title">Iniciar Sessão</h1>
-      <form action="" class="login__form">
+      <span class="login__span" data-loginspan>Usuário e/ou senha inválidos</span>
+      <form action="" class="login__form" data-loginform>
         <div class="login__form--block">
           <label class="login__form--label" for="email">Email</label>
-          <input class="login__form--input" type="email" name="emal" id="email" required>
+          <input class="login__form--input" type="email" name="emal" id="email" required data-useremail> 
         </div>
         <div class="login__form--block">
           <label class="login__form--label" for="password">Senha</label>
-          <input class="login__form--input" type="password" name="password" id="password" required>
+          <input class="login__form--input" type="password" name="password" id="password" required data-userpassword>
         </div>
-        <input class="login__form--button bluebutton" type="submit" value="Entrar">
+        <input class="login__form--button bluebutton" type="submit" value="Entrar" data-loginbutton>
       </form>
       
     </section>
@@ -36,5 +37,6 @@
     
   <footer class="footer" data-footer></footer>
   <script src="../assets/js/main.js"></script>
+  <script src="./login.js" type="module"></script>
 </body>
 </html>
