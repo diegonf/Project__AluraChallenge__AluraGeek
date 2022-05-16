@@ -13,6 +13,18 @@
   display: none;
 }
 
+.add__form--span{
+  color: red;
+  display: inline-block;
+  font-family: var(--pagefont);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  margin-left: 0.1rem;
+}
+.add__form--span.hidden {
+  display: none;
+}
+
 .add__form--img {
   align-items: stretch;
   display: flex;
@@ -28,6 +40,7 @@
   height: 15.2rem;
   justify-content: space-between;
   padding: 3.2rem;
+  position: relative;
 }
 
 .add__form--imgdrop--icon {
@@ -43,6 +56,24 @@
   font-size: 1.4rem;
   font-weight: 400;
   text-align: center;
+}
+
+.add__form--imgdrop--deletebutton{
+  bottom: 0.5rem;
+  display: none;
+  position: absolute;
+  margin: 0 auto;
+
+  background: none;
+  border: none;
+  color: var(--blue100);
+  font-family: var(--pagefont);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.add__form--imgdrop--deletebutton:hover{
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .add__form--imgbutton--container {
@@ -71,6 +102,7 @@
 .add__form--imgmobile {
   background: var(--white);
   border: 0.1rem dashed var(--black30);
+  background: no-repeat center / contain;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -185,7 +217,7 @@
     display: flex;
   }
   .add__form--imgdrop {
-    background: no-repeat center / cover;
+    background: no-repeat center / contain;
     background-color: var(--white);
     width: 36%;
   }
@@ -196,11 +228,14 @@
   .add__form--imgdrop.imgAdded {
     border-style: solid;
   }
-  .add__form--imgdrop.imgAdded div {
+  .add__form--imgdrop.imgAdded .add__form--imgdrop--icon {
     display: none;
   }
-  .add__form--imgdrop.imgAdded p {
+  .add__form--imgdrop.imgAdded .add__form--imgdrop--text {
     display: none;
+  }
+  .add__form--imgdrop.imgAdded .add__form--imgdrop--deletebutton{
+    display: flex;
   }
   .add__form--imgbutton--button {
     height: 5.1rem;
@@ -234,7 +269,7 @@
     display: flex;
   }
   .add__form--imgdrop {
-    background: no-repeat center / cover;
+    background: no-repeat center / contain;
     background-color: var(--white);
     width: 50%;
   }

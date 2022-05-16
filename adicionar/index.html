@@ -19,13 +19,16 @@
   <main>
     <section class="add">
       <h1 class="add__title">Adicionar novo produto</h1>
-      <form class="add__form" action="">
-        <input class="add__form--imginput" type="file" accept="image/*" required id="add-img">
+      <form class="add__form" action="" data-productform>
+        <span class="add__form--span hidden" data-formspan>span</span>
+        <input class="add__form--imginput" type="file" accept="image/*" required id="add-img" data-imginput>
         <div class="add__form--img">
           <div class="add__form--imgdrop" data-imgdrop>
             <div class="add__form--imgdrop--icon"></div>
             <p class="add__form--imgdrop--text">Arraste para adicionar uma imagem para o produto</p>
+            <button type="button" class="add__form--imgdrop--deletebutton" data-img-deletebutton>Excluir Imagem</button>
           </div>
+          
           <label class="add__form--imgbutton" for="add-img">
             <div class="add__form--imgbutton--container">
               <p class="add__form--imgbutton--text">Ou</p>
@@ -35,27 +38,27 @@
           </label>
         </div>
         <label class="add__form--imgmobile--label" for="add-img">
-          <div class="add__form--imgmobile">
+          <div class="add__form--imgmobile" data-imgmobile>
             <div class="add__form--imgmobile--plus"></div>
             <p class="add__form--imgmobile--text">Adicionar uma imagem para o produto</p>
           </div>
         </label>
-        
         <div class="add__form--block">
           <label class="add__form--label" for="name">Nome do produto</label>
-          <input class="add__form--input" type="text" name="name" id="name" required>
+          <input class="add__form--input" type="text" name="name" id="name" required maxlength="20">
         </div>
         <div class="add__form--block">
           <label class="add__form--label" for="price">Preço do produto</label>
           <input class="add__form--input" type="number" name="price" id="price" required>
         </div>
-        <textarea class="add__form--description" type="" name="description" id="description" required placeholder="Descrição do produto"></textarea>
-        <input class="add__form--button bluebutton" type="submit" value="Adicionar Produto">
+        <textarea class="add__form--description" type="" name="description" id="description" required placeholder="Descrição do produto" maxlength="150"></textarea>
+        <input class="add__form--button bluebutton" type="submit" value="Adicionar Produto" data-submit>
       </form>
     </section>
   </main>
 
   <footer class="footer" data-footer></footer>
   <script src="../assets/js/main.js" type="module"></script>  
+  <script src="./manager-addproducts.js" type="module"></script>  
 </body>
 </html>
