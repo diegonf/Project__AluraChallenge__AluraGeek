@@ -15,7 +15,7 @@ export class User {
     }
 }
 
-const adm = new User("Diego Ferreira","adm123", "adm@alurageek.com");
+const adm = new User("Diego Ferreira","Adm@123", "adm@alurageek.com");
 
 export const checkADM = (email, password) => {
     if (email == adm.userEmail) {
