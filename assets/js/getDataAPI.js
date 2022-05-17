@@ -1,6 +1,6 @@
 import { Product } from './Product.js'
 
-export const apiGetData = (_callBack) => {
+export const apiGetData = (_callBack, searchName) => {
   const prodListLS = JSON.parse(localStorage.getItem('products')) || [];
 
   if (prodListLS[0] == null || prodListLS[0] == ''){
@@ -19,15 +19,15 @@ export const apiGetData = (_callBack) => {
         prodList = [];
       }
       localStorage.setItem('products',JSON.stringify(prodList));
-      productList(prodList, _callBack);
+      productList(prodList, _callBack, searchName);
     };
     xhr.send();
   } else {
-    productList(prodListLS, _callBack)
+    productList(prodListLS, _callBack, searchName)
   }
 }
 
-const productList = (prodList, _callBack) => {
+const productList = (prodList, _callBack, searchName) => {
   let i = 0;
   let prodListObj = [];
   prodList.forEach(prod => {
@@ -35,5 +35,5 @@ const productList = (prodList, _callBack) => {
     i++;
   });
 
-  _callBack(prodListObj);
+  _callBack(prodListObj, searchName);
 }
