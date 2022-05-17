@@ -67,7 +67,12 @@ export class Product {
   _buildImg(imgClass) {
     const prodImg = document.createElement('img');
     prodImg.classList.add(imgClass);
-    prodImg.src='../assets/imgs/' + this._photo;
+    if(this._photo.length>100){
+      prodImg.src= this._photo;
+    } else {
+      prodImg.src= '../assets/imgs/' + this._photo;
+    }
+    
     prodImg.alt="Imagem " + this._name;
     return prodImg;
   }
@@ -85,19 +90,3 @@ export class Product {
     return prodPrice;
   }
 }
-
-//small product
-// <div class="gallery__product">
-//   <img class="gallery__product--img" src="../assets/imgs/starwars-img1.png" alt="Imagem do produto XYZ">
-//   <p class="gallery__product--name">Produto XYZ</p>
-//   <p class="gallery__product--price">R$ 60,00</p>
-//   <a class="gallery__product--seeproduct" href="#">Ver produto</a>
-// </div>
-  
-//big product
-// <div class="product">
-//   <img src="../assets/imgs/product.png" alt="Imagem do produto" class="product__img">
-//   <h1 class="product__title">Produto XYZ</h1>
-//   <p class="product__price">R$ 60,00</p>
-//   <p class="product__description">Voluptas voluptatum quibusdam similique.</p> 
-// </div>

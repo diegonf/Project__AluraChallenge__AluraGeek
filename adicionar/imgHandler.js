@@ -1,3 +1,5 @@
+import { addProduct } from "./addProduct.js";
+
 // ************************************** Function Initial Call **************************************
 export const callImgHandler = () => {
   //Drag and Drop Area
@@ -40,10 +42,10 @@ export const callImgHandler = () => {
     if(imgInput.value){
       form.reportValidity(); 
       if(formStatus){
-        console.log('Form is good', form.elements);
-        // form.reset();
-        // resetDropArea();
-        // resetInput(); 
+        addProduct(form.elements);
+        form.reset();
+        resetDropArea();
+        resetInput(); 
       }
     } else {
       const spanMsg = document.querySelector('[data-formspan]');
